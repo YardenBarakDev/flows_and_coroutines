@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".clock.ClockActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <TextView
+        android:id="@+id/clock_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:textSize="50sp"
+        android:textColor="@color/black"
+        android:text="Clock"
+        />
+
+    <TextView
+        android:id="@+id/clock_activity_countdown_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clock_text"
+        android:layout_marginTop="20dp"
+        android:textSize="50sp"
+        android:textColor="@color/black"
+        tools:text="10"
+        android:layout_weight="1"
+        />
+
+    <Button
+        android:id="@+id/clock_activity_state_flow_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="30sp"
+        android:text="State Flow"
+        android:textColor="@color/black"
+        android:layout_weight="1"
+        />
+
+    <TextView
+        android:id="@+id/clock_activity_state_flow_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clock_activity_state_flow_button"
+        android:layout_marginTop="20dp"
+        android:textSize="50sp"
+        android:textColor="@color/black"
+        android:text="Clock"
+        />
+
+
+    <Button
+        android:id="@+id/clock_activity_shared_flow_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="70dp"
+        android:text="Shared Flow"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:layout_weight="1"
+        />
+
+    <TextView
+        android:id="@+id/clock_activity_shared_flow_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clock_activity_shared_flow_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="20dp"
+        android:textSize="50sp"
+        android:textColor="@color/black"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
